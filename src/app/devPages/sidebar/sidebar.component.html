@@ -1,0 +1,8 @@
+<section (click) = 'toggle()' *ngIf = 'screenSize > 0'>
+  <p >MENU</p>
+</section>
+
+<div *ngIf = 'open'>
+  <app-sidebar-element *ngFor = "let section of sections" [selected] = 'section.selected' [name] = "section.name" [links] = 'section.blogs'  ></app-sidebar-element>
+</div>
+

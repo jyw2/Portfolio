@@ -1,0 +1,12 @@
+
+<div (click) = "select()">
+  <h2 (click) = "select()">{{name}}</h2> <h2 [ngClass] = "{rotated: selected == true}">></h2>
+</div>
+<ul *ngIf = "selected" [@selection] = 'selected'>
+  <li *ngFor = "let link of links">
+    <a routerLinkActive = "selected" routerLink="{{'/dev/'+ section +'/'+ link.id}}" (click) = 'blogClick(link.id)'>{{link.name}}</a>
+  </li>
+</ul>
+
+
+
