@@ -1,0 +1,10 @@
+img{
+  width: 100%;
+  cursor: pointer;
+}
+:host{
+  cursor: pointer;
+}
+img:hover{
+  opacity: 80%;
+}

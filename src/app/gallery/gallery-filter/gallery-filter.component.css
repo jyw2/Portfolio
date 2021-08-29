@@ -1,0 +1,41 @@
+h2{
+  display: inline;
+  font-size: 25px;
+  letter-spacing: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h2:hover{
+  color: red;
+  transform: translateY(-4px);
+  transition: all 200ms ease-out;
+}
+.checkbox {
+  width: 15px;
+  height:15px;
+  display: inline-block;
+  border: solid 2px black;
+  background-color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+section {
+  /* each option section */
+  background-color: white;
+  display: inline;
+  display: flex;
+  align-items: center;
+}
+
+section :hover{
+  cursor: pointer;
+}
+
+@media (max-width: 710px) {
+
+  h2{
+      font-size: 20px ;
+  }
+
+
+
+
+}

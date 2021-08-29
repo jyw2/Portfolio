@@ -17,7 +17,6 @@ export class SidebarComponent implements OnInit, OnDestroy {
   public screenSizeSub:Subscription = new Subscription;
   public open:boolean = true;
   public screenSize:number = 0;
-  public rotated:boolean = false
   private blogClickSub:Subscription = new Subscription;
 
   constructor( private blogService: BlogService,private mQs: MediaQueriesService) {}
@@ -56,10 +55,10 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
   toggle(){
     if (this.open){
-      this.rotated = true
+
       this.open = false
     }else {
-      this.rotated = false
+
       this.open = true
     }
   }

@@ -15,6 +15,9 @@ import { Routes, RouterModule, Router} from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
 import { SidebarElementComponent } from './devPages/sidebar-element/sidebar-element.component';
 import { ContactComponent } from './contact/contact.component';
+import { GalleryFilterComponent } from './gallery/gallery-filter/gallery-filter.component';
+import { GalleryMenuComponent } from './gallery/gallery-menu/gallery-menu.component';
+import { GalleryTileComponent } from './gallery/gallery-tile/gallery-tile.component';
 
 
 
@@ -37,7 +40,10 @@ const appRoutes: Routes = [
     TileHolderComponent,
     GalleryComponent,
     SidebarElementComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryFilterComponent,
+    GalleryMenuComponent,
+    GalleryTileComponent
   ],
   imports: [
     BrowserModule,

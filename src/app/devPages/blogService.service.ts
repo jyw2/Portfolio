@@ -286,8 +286,8 @@ The method was mainly derived from\
 <img src='assets/fighter/scale.jpg' >")
     ]))
     this.sections.push( new Section( 'Web Development', [
-      new BlogData ('Commision Site', 'comSite', 'My commission site which features an API based gallery and a price estimator.'+
-      'The application was built using Angular and MongoDB and is hosted on a Virtual private Server using Apache2', '<p>Visit the site <a href = "">here.</a> <br> To see the full implementation, \
+      new BlogData ('Commision Site', 'comSite', 'My commission site which features an Express API based gallery and a price estimator.'+
+      'The application was built using Angular, NodeJS and MongoDB and is hosted on a Virtual private Server using Apache2', '<p>The gallery feautures filters, randomization, image addition controlled by scrolling and smart image distribution to ensure the lengths of the two columns of images are always similar.</p><p>Visit the site <a href = "">here.</a> <br> To see the full implementation, \
       visit the github repo <a href = "">here.</a> <br>\
       The outdated version of the site built using NodeJS, MongoDB <br>and vanilla CSS JS and HTML is available <a href = "https://protojops.com">here</a></p>'),
       new BlogData ('Portfolio Site','portfolio', 'This portfolio site was built using Angular and is hosted on an Apache2 server.','<p> To see the full implementation, visit the github repo <a href = "">here.</a> </p>'),

@@ -1,3 +1,12 @@
-<div><h2 [@spawn] = ''>GALLERY</h2>
-  <p [@spawn1] = ''>Coming Soon</p>
+<div id = 'content'>
+  <app-gallery-menu (apiCall) = 'newImages($event)'></app-gallery-menu>
+  <div id = "images" #images>
+    <section id = "left" #left>
+      <app-gallery-tile [pvLink] = 'image.pvLink' [imageLink] = 'image.link' *ngFor = 'let image of renderedImagesL'></app-gallery-tile>
+    </section>
+    <section id = "right" #right>
+      <app-gallery-tile [pvLink] = 'image.pvLink' [imageLink] = 'image.link' *ngFor = 'let image of renderedImagesR'></app-gallery-tile>
+    </section>
+  </div>
 </div>
+
