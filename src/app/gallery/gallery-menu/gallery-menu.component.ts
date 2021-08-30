@@ -39,16 +39,17 @@ export class GalleryMenuComponent implements OnInit {
     this.filterData.push(
       //Add the filters
       {name: 'ILLUSTRATION', tag: 'illustration' },
-      {name: 'CHARACTER SHEETS', tag: 'charSheet' },
-      {name: 'SPLASH ARTS', tag: 'splashArt' },
-      {name: 'WALLPAPERS', tag: 'wallpaper' },
-      {name: 'MOVING WP', tag: 'movingWallpaper' }
+      {name: 'CHARACTER DESIGN', tag: 'charSheet' },
+      {name: '3D', tag: 'model' },
+      {name: 'CONCEPT ART', tag: 'concept' },
+      {name: 'TRADITIONAL', tag: 'trad' }
     )
 
     for (let filter of this.filterData ){
       //add all tags initially
       this.filters.push(filter.tag)
     }
+    this.filters.push('splashArt', 'wallpaper','inDepth')
     this.populateImages()
 
 
@@ -86,10 +87,33 @@ export class GalleryMenuComponent implements OnInit {
     if(filterData.isSelected){
       //add a filter
       this.filters.push(filterData.tag)
+
+      // illustration selected
+      if(filterData.tag == 'illustration'){
+        this.filters.push('splashArt', 'wallpaper')
+      }else if (filterData.tag == 'charSheet'){
+        //design selected
+        this.filters.push('inDepth')
+      }
+
     }else{
       //remove a filter
-      const index = this.filters.indexOf(filterData.tag)
+      let index = this.filters.indexOf(filterData.tag)
       this.filters.splice(index,1)
+
+      //illustration selected
+      if(filterData.tag == 'illustration'){
+        index = this.filters.indexOf('splashArt')
+        this.filters.splice(index,1)
+
+        index = this.filters.indexOf('wallpaper')
+        this.filters.splice(index,1)
+      }else if (filterData.tag == 'charSheet'){
+        //design selected
+        index = this.filters.indexOf('inDepth')
+        this.filters.splice(index,1)
+      }
+
     }
 
     //call API here

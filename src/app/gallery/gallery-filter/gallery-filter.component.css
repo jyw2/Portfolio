@@ -1,8 +1,8 @@
 h2{
   display: inline;
-  font-size: 25px;
+  font-size: 23px;
   letter-spacing: 4px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 h2:hover{
   color: red;

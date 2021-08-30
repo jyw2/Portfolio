@@ -12,12 +12,8 @@ import { TileHolderComponent } from './tile-holder/tile-holder.component';
 import { BlogComponent } from './devPages/blog/blog.component';
 
 import { Routes, RouterModule, Router} from '@angular/router';
-import { GalleryComponent } from './gallery/gallery.component';
 import { SidebarElementComponent } from './devPages/sidebar-element/sidebar-element.component';
 import { ContactComponent } from './contact/contact.component';
-import { GalleryFilterComponent } from './gallery/gallery-filter/gallery-filter.component';
-import { GalleryMenuComponent } from './gallery/gallery-menu/gallery-menu.component';
-import { GalleryTileComponent } from './gallery/gallery-tile/gallery-tile.component';
 
 
 
@@ -25,7 +21,7 @@ const appRoutes: Routes = [
   { path: '', component: TileHolderComponent},
   { path: 'dev', redirectTo: 'dev/fireball'}, //default page for /dev
   { path: 'dev/:blog', component: BlogSectionComponent},
-  { path: 'vis', component: GalleryComponent},
+  { path: 'vis', loadChildren: () => import('./gallery.module').then(m => m.GalleryModule)},
   { path: 'contact', component: ContactComponent}
 ]
 
@@ -38,12 +34,9 @@ const appRoutes: Routes = [
     BlogComponent,
     BlogSectionComponent,
     TileHolderComponent,
-    GalleryComponent,
     SidebarElementComponent,
     ContactComponent,
-    GalleryFilterComponent,
-    GalleryMenuComponent,
-    GalleryTileComponent
+
   ],
   imports: [
     BrowserModule,
