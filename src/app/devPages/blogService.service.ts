@@ -290,7 +290,7 @@ The method was mainly derived from\
       'The application was built using Angular, NodeJS and MongoDB and is hosted on a virtual private server using Apache2', '<p>The gallery feautures filters, randomization, image addition controlled by scrolling and smart image distribution to ensure the lengths of the two columns of images are always similar.</p><p>Visit the site <a href = "https://comSite.jyuenw.com">here.</a> <br> To see the full implementation, \
       visit the github repo <a href = "https://github.com/jyw2/comSiteRev4">here.</a> <br>\
       The outdated version of the site built using NodeJS, MongoDB <br>and vanilla CSS JS and HTML is available <a href = "https://oldCom.jyuenw.com">here</a></p>'),
-      new BlogData ('Portfolio Site','portfolio', 'This portfolio site was built using Angular and is hosted on an Apache2 server.','<p> To see the full implementation, visit the github repo <a href = "">here.</a> </p>'),
+      new BlogData ('Portfolio Site','portfolio', 'This portfolio site was built using Angular and is hosted on an Apache2 server.','<p> To see the full implementation, visit the github repo <a href = "https://github.com/jyw2/portfolio">here.</a> </p>'),
       new BlogData ( 'Progress Tracker','grind','An app that helps you track and compare grind spots in the game Black Desert Online. It uses Angular, Bootstrap and MongoDB', '<p> The site features user authentication, statistics tools, and a map for easy use. </p>\
       <p>Visit the site <a href = "">here.</a> <br> To see the full implementation, \
       visit the github repo <a href = "">here.</a> </p>')
