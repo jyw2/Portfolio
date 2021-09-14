@@ -287,13 +287,29 @@ The method was mainly derived from\
     ]))
     this.sections.push( new Section( 'Web Development', [
       new BlogData ('Commision Site', 'comSite', 'My commission site which features a Node Express API based gallery, lazy loading and a price estimator.'+
-      'The application was built using Angular, NodeJS and MongoDB and is hosted on a virtual private server using Apache2', '<p>The gallery feautures filters, randomization, image addition controlled by scrolling and smart image distribution to ensure the lengths of the two columns of images are always similar.</p><p>Visit the site <a href = "https://comSite.jyuenw.com">here.</a> <br> To see the full implementation, \
-      visit the github repo <a href = "https://github.com/jyw2/comSiteRev4">here.</a> <br>\
-      The outdated version of the site built using NodeJS, MongoDB <br>and vanilla CSS JS and HTML is available <a href = "https://oldCom.jyuenw.com">here</a></p>'),
-      new BlogData ('Portfolio Site','portfolio', 'This portfolio site was built using Angular and is hosted on an Apache2 server.','<p> To see the full implementation, visit the github repo <a href = "https://github.com/jyw2/portfolio">here.</a> </p>'),
-      new BlogData ( 'Progress Tracker','grind','An app that helps you track and compare grind spots in the game Black Desert Online. It uses Angular, Bootstrap and MongoDB', '<p> The site features user authentication, statistics tools, and a map for easy use. </p>\
-      <p>Visit the site <a href = "">here.</a> <br> To see the full implementation, \
-      visit the github repo <a href = "">here.</a> </p>')
+      'The application was built using Angular, NodeJS and MongoDB and is hosted on a virtual private server using Apache2', '<p>The gallery feautures filters, randomization, image addition controlled by scrolling and smart image distribution to ensure the lengths of the two columns of images are always similar.</p>\
+      <img src = "../../assets/gallery.jpg">\
+      <p> The price estimator dynamically and instantly updates the total price based on the options you choose </p>\
+      <img src = "../../assets/price.JPG">\
+      <p>Visit the site <a href = "https://comSite.jyuenw.com"  target ="_blank" >here.</a> <br> To see the full implementation, \
+      visit the github repo <a href = "https://github.com/jyw2/comSiteRev4"  target ="_blank">here.</a> <br>\
+      The outdated version of the site built using NodeJS, MongoDB <br>and vanilla CSS JS and HTML is available\ <a href = "https://oldCom.jyuenw.com"  target ="_blank">here</a></p>'),
+      new BlogData ('Portfolio Site','portfolio', 'This portfolio site was built using Angular and is hosted on an Apache2 server.','<p> To see the full implementation, visit the github repo <a href = "https://github.com/jyw2/portfolio"  target ="_blank">here.</a> </p>'),
+      new BlogData ( 'Progress Tracker','grind','This is an app that helps you track and compare grind spots in the game Black Desert Online. \
+      It uses Angular, Bootstrap5 and Google Firebase.', '<p> The site has authentication and allows users to store their grind sessions.\
+      They can then compare their results to their previous sessions, or see how other players are performing. There is also a page that shows the \
+      most popular and most profitable grind spots. </p>\
+      <p>Visit the site <a href = "https://grind.jyuenw.com"  target ="_blank">here.</a> <br> To see the full implementation, \
+      visit the github repo <a href = "https://github.com/jyw2/grindSpot"  target ="_blank">here.</a> </p>\
+      <p> Users can see the the grind sessions of other players or only themselves in the graph. They can change the filters to gain more focused data.</p>\
+      <img src ="../../assets/graph.JPG">\
+      <p> At a specific grind spot page or <a href = "https://grind.jyuenw.com/add"></a>Users can submit their grind sessions with multiple data parameters. Data is verified client side.</p>\
+      <img src = "../../assets/addSess.JPG">\
+      <p> Users can also view all spots they have added sessions to at <a href = "https://grind.jyuenw.com/myGrindSpots">my grind spots</a>.</p>\
+      <img src ="../../assets/mySpots.JPG">\
+      <p>The authentication system uses Firebases authentication API and allows the user to login and register. Verification is also implemented. \
+      Certain routes and links are protected and hidden if a user is not logged in.</p>\
+      <img src = "../../assets/login.JPG">')
     ]))
 
     //takes all blogs and puts it in an object with it's id as it's key

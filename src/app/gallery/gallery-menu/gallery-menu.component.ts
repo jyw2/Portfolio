@@ -135,7 +135,7 @@ export class GalleryMenuComponent implements OnInit {
 
   populateImages(){
     //used on first page load to load all images
-    this.httpClient.get('http://api.jyuenw.com/all').subscribe((images)=>{
+    this.httpClient.get('https://api.jyuenw.com/all').subscribe((images)=>{
       //send Images to the main gallery component to render
       this.apiCall.emit(images)
     })
