@@ -303,7 +303,7 @@ The method was mainly derived from\
       visit the github repo <a href = "https://github.com/jyw2/grindSpot"  target ="_blank">here.</a> </p>\
       <p> Users can see the grind sessions of other players or only themselves in the graph. They can change the filters to gain more focused data.</p>\
       <img src ="../../assets/graph.JPG">\
-      <p> At a specific grind spot page or <a href = "https://grind.jyuenw.com/add">through the quick add page.</a>Users can submit their grind sessions with multiple data parameters. Data is verified client side.</p>\
+      <p> At a specific grind spot page or <a href = "https://grind.jyuenw.com/add">through the quick add page, </a>users can submit their grind sessions with multiple data parameters. Data is verified client side.</p>\
       <img src = "../../assets/addSess.JPG">\
       <p> Users can also view all spots they have added sessions to at <a href = "https://grind.jyuenw.com/myGrindSpots">my grind spots</a>.</p>\
       <img src ="../../assets/mySpots.JPG">\
